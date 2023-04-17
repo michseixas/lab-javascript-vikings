@@ -27,7 +27,8 @@ class Viking extends Soldier {
         this.health -= damage;
         if (this.health > 0) {
             return `${this.name} has received ${damage} points of damage`;
-        } else { return `${this.name} has died in act of combat.`};
+        } else { 
+            return `${this.name} has died in act of combat`};
     }
 
     battleCry() {
@@ -41,8 +42,9 @@ class Saxon extends Soldier {
     receiveDamage (damage) {
         this.health -= damage;
         if (this.health > 0) {
-            return `A Saxon has received ${this.health} points of ${damage}`;
-        } else { return `A Saxon has died in combat.`;
+            return `A Saxon has received ${damage} points of damage`;
+        } else { 
+            return `A Saxon has died in combat`;
     }
     }
 }
